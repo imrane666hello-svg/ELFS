@@ -10,6 +10,3 @@ $(TARGET): elfs.cpp
 clean:
 	@if exist $(TARGET) del /f $(TARGET)
 	@if exist elfs_disk.img del /f elfs_disk.img
-
-run: $(TARGET)
-	./$(TARGET) format
